@@ -10,4 +10,11 @@ display.clear
 pin16(0)
 sleep(1000)
 
+while True:
+    if button_a.is_pressed():
+        pin16(1)
+        Image.YES
 
+    if button_b.is_pressed():
+        pin16(0)
+        Image.NO

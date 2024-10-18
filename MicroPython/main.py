@@ -13,8 +13,8 @@ sleep(1000)
 while True:
     if button_a.is_pressed():
         pin16.write_digital(1)
-        Image.YES
+        display.show(Image.YES)
 
     if button_b.is_pressed():
         pin16.write_digital(0)
-        Image.NO
+        display.show(Image.NO)
